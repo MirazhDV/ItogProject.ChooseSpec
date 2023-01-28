@@ -1,7 +1,7 @@
 ﻿//Написать программу, которая из имеющегося массива строк
 //формирует массив из строк, длинной <= 3
 
-int GetNumber(string message)
+int GetNumber(string message) //метод ввода числа в консоли
 {
     int result;
 
