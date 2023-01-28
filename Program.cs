@@ -43,7 +43,7 @@ void PrintArray(string[] array) //метод печати массива
     Console.WriteLine();
 }
 
-string[] NewArray(string[] array) //метод поиска чисел 
+string[] NewArray(string[] array) //метод поиска чисел и формирование массива из этих чисел
 {
     int count = 0;
     int limit = 3;    
@@ -72,3 +72,8 @@ string[] NewArray(string[] array) //метод поиска чисел
     return newArray;
 }
 
+int dim = GetNumber("Введите размерность массива");
+string[] array = InitArray(dim);
+PrintArray(array);
+string [] copyArray = NewArray(array);
+PrintArray(copyArray);
