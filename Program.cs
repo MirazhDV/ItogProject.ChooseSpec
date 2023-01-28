@@ -43,3 +43,32 @@ void PrintArray(string[] array) //метод печати массива
     Console.WriteLine();
 }
 
+string[] NewArray(string[] array) //метод поиска чисел 
+{
+    int count = 0;
+    int limit = 3;    
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= limit)
+        {
+            count++;
+        }              
+    }    
+    string[] newArray = new string[count];
+    int j = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (newArray.Length < 1)
+        {
+            Console.WriteLine($"Подходяших элементов ТЮ-ТЮ! В следующий раз попробуйте другой массив.");
+            break;            
+        }
+        if (array[i].Length <= limit)
+        {
+            newArray[j]=array[i];
+            j++;
+        }
+    }
+    return newArray;
+}
+
