@@ -34,3 +34,12 @@ string[] InitArray(int dimention) //метод инициализации мас
     return array;
 }
 
+void PrintArray(string[] array) //метод печати массива
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+
