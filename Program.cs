@@ -20,3 +20,17 @@ int GetNumber(string message) //метод ввода числа в консол
 
     return result;
 }
+
+string[] InitArray(int dimention) //метод инициализации массива
+{
+    string[] array = new string[dimention];
+    
+    for (int i = 0; i < dimention; i++)
+    {
+        Console.Write($"Введите {i+1} значение массива: ");
+        array[i] = Console.ReadLine()!;
+    }
+
+    return array;
+}
+
